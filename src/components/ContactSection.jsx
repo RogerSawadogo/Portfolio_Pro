@@ -1,90 +1,81 @@
-import {
-  
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
- 
-} from "lucide-react";
-import { cn } from "@/lib/utils";
-import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 export const ContactSection = () => {
-  
-
-  
-  
   return (
-    <section id="contact" className="py-24 px-4 relative bg-secondary/30">
+    <section
+      id="contact"
+      className="py-24 px-4 relative bg-gradient-to-b from-secondary/40 to-secondary/10"
+    >
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary"> Touch</span>
+          Get In <span className="text-primary">Touch</span>
         </h2>
-
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
+          Have a project in mind or want to collaborate? Let’s talk!
         </p>
-        <div className="flex flex-col items-center text-center space-y-8 mx-auto max-w-md">
-  <h3 className="text-2xl font-semibold">Contact Information</h3>
 
-  <div className="space-y-6 w-full">
-    <div className="flex items-center justify-center space-x-4">
-      <div className="p-3 rounded-full bg-primary/10">
-        <Mail className="h-6 w-6 text-primary" />
-      </div>
-      <div>
-        <h4 className="font-medium">Email</h4>
-        <a
-          href="mailto:rogersawadogo12@gmail.com"
-          className="text-muted-foreground hover:text-primary transition-colors block"
-        >
-          rogersawadogo12@gmail.com
-        </a>
-      </div>
-    </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Email */}
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=rogersawadogo12@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-6 bg-card/50 backdrop-blur-md rounded-xl shadow-md flex items-center space-x-4 
+                       hover:shadow-lg hover:scale-[1.03] hover:bg-card/70 transition-transform duration-200 cursor-pointer"
+          >
+            <div className="p-3 rounded-full bg-primary/10">
+              <Mail className="h-6 w-6 text-primary" />
+            </div>
+            <div>
+              <h4 className="font-semibold">Email</h4>
+              <p className="text-muted-foreground">rogersawadogo12@gmail.com</p>
+            </div>
+          </a>
 
-    <div className="flex items-center justify-center space-x-4">
-      <div className="p-3 rounded-full bg-primary/10">
-        <Phone className="h-6 w-6 text-primary" />
-      </div>
-      <div>
-        <h4 className="font-medium">Phone</h4>
-        <a
-          href="tel:+212619933585"
-          className="text-muted-foreground hover:text-primary transition-colors block"
-        >
-          +212 619 933 585
-        </a>
-      </div>
-    </div>
+          {/* Phone */}
+          <a
+            href="tel:+212619933585"
+            className="p-6 bg-card/50 backdrop-blur-md rounded-xl shadow-md flex items-center space-x-4 
+                       hover:shadow-lg hover:scale-[1.03] hover:bg-card/70 transition-transform duration-200 cursor-pointer"
+          >
+            <div className="p-3 rounded-full bg-primary/10">
+              <Phone className="h-6 w-6 text-primary" />
+            </div>
+            <div>
+              <h4 className="font-semibold">Phone</h4>
+              <p className="text-muted-foreground">+212 619 933 585</p>
+            </div>
+          </a>
 
-    <div className="flex items-center justify-center space-x-4">
-      <div className="p-3 rounded-full bg-primary/10">
-        <MapPin className="h-6 w-6 text-primary" />
-      </div>
-      <div>
-        <h4 className="font-medium">Location</h4>
-        <p className="text-muted-foreground">Rabat, Morocco</p>
-      </div>
-    </div>
-  </div>
+          {/* Location */}
+          <a
+            href="https://www.google.com/maps?q=Rabat,+Morocco"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-6 bg-card/50 backdrop-blur-md rounded-xl shadow-md flex items-center space-x-4 
+                       hover:shadow-lg hover:scale-[1.03] hover:bg-card/70 transition-transform duration-200 cursor-pointer"
+          >
+            <div className="p-3 rounded-full bg-primary/10">
+              <MapPin className="h-6 w-6 text-primary" />
+            </div>
+            <div>
+              <h4 className="font-semibold">Location</h4>
+              <p className="text-muted-foreground">Rabat, Morocco</p>
+            </div>
+          </a>
+        </div>
 
-  <div className="pt-8">
-    <h4 className="font-medium mb-4">Connect With Me</h4>
-    <div className="flex space-x-4 justify-center">
-      <a href="#" target="_blank" rel="noopener noreferrer">
-        <Linkedin className="text-primary hover:text-primary/70 transition" />
-      </a>
-    </div>
-  </div>
-</div>
-
-       
-         
-       
+        {/* Socials */}
+        <div className="flex space-x-4 justify-center mt-10">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition cursor-pointer hover:scale-110 duration-200"
+          >
+            <Linkedin className="h-6 w-6 text-primary" />
+          </a>
+        </div>
       </div>
     </section>
   );
