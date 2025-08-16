@@ -40,7 +40,7 @@ const projects = [
       "Built a full data pipeline for the platform and a Streamlit dashboard to monitor user activity, shipments, and analytics in real time.",
     image: "/projects/proj3.png",
     tags: ["Docker", "Airflow", "ETL", "Streamlit", "PostgreSQL"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/RogerSawadogo/BayirExpress_Data_Pipeline",
   },
   {
     id: 4,
