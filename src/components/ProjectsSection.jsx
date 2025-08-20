@@ -49,7 +49,7 @@ const projects = [
       "Implemented retrieval-augmented generation (RAG) with a FastAPI backend to provide AI-powered responses and insights for the platform.",
     image: "/projects/proj4.png",
     tags: ["RAG", "FastAPI", "Python", "Hugging Face"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/RogerSawadogo/BayirExpress_RAG_chatbot",
   },
   
   {
