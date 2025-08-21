@@ -2,16 +2,6 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
 
-
-    {
-    id: 1,
-    title: "BayirExpress Platform",
-    description:
-      "Designed and developed the end-to-end collaborative delivery platform connecting travelers and senders across Morocco and Sub-Saharan Africa, including backend and frontend development.",
-    image: "/projects/proj1.png",
-    tags: ["Node.js", "React", "MongoDB", "Express", "REST API"],
-    githubUrl: "https://bayir-express.vercel.app/",
-  },
   {
     id: 0,
     title: "Soil Characterization with Spectroscopic Data (Intership)",
@@ -21,7 +11,16 @@ const projects = [
     tags: ["Scikit-learn", "Pandas", "Matplotlib", "PCA", "PLSR", "LASSO"],
     
   },
-
+  
+  {
+    id: 1,
+    title: "BayirExpress Platform",
+    description:
+      "Designed and developed the end-to-end collaborative delivery platform connecting travelers and senders across Morocco and Sub-Saharan Africa, including backend and frontend development.",
+    image: "/projects/proj1.png",
+    tags: ["Node.js", "React", "MongoDB", "Express", "REST API"],
+    githubUrl: "https://bayir-express.vercel.app/",
+  },
   
   {
     id: 2,
