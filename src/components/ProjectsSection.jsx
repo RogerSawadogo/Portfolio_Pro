@@ -4,16 +4,16 @@ const projects = [
 
 
     {
-    id: 0,
+    id: 1,
     title: "BayirExpress Platform",
     description:
       "Designed and developed the end-to-end collaborative delivery platform connecting travelers and senders across Morocco and Sub-Saharan Africa, including backend and frontend development.",
     image: "/projects/proj1.png",
     tags: ["Node.js", "React", "MongoDB", "Express", "REST API"],
-    githubUrl: "https://github.com/RogerSawadogo/BayirExpress",
+    githubUrl: "https://bayir-express.vercel.app/",
   },
   {
-    id: 1,
+    id: 0,
     title: "Soil Characterization with Spectroscopic Data (Intership)",
     description:
       "Built ML models using spectroscopy data to predict soil properties (PCA, LASSO, PLSR). Drove a 70% relative improvement in model accuracy (R² from 0.5 to 0.85) for critical targets by implementing advanced feature engineering including spectral filtering and transformation techniques.",
