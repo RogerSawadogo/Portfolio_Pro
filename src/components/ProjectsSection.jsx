@@ -16,9 +16,9 @@ const projects = [
     id: 1,
     title: "Soil Characterization with Spectroscopic Data (Intership)",
     description:
-      "Built ML models using spectroscopy data and chemometric techniques (PCA, PLSR) to predict soil properties, combining scientific analysis with predictive modeling.",
+      "Built ML models using spectroscopy data to predict soil properties (PCA, LASSO, PLSR). Drove a 70% relative improvement in model accuracy (R² from 0.5 to 0.85) for critical targets by implementing advanced feature engineering including spectral filtering and transformation techniques.",
     image: "/projects/proj0.png", 
-    tags: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "PCA", "PLSR"],
+    tags: ["Scikit-learn", "Pandas", "Matplotlib", "PCA", "PLSR", "LASSO"],
     
   },
 
